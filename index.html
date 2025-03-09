@@ -3,49 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código Kid</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>Código Kid</title>    
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="portable.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a>Cursos</a>
-                    <ul>
-                        <li><a href="#robotica">Robótica</a></li>
-                        <li><a href="#games">Dev. Games</a></li>
-                        <li><a href="#programacao">Programação</a></li>
-                        <li><a href="#cursos">Outros</a></li>
-                    </ul>
-                </li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>            
-        </nav>
-    </header>
+<body>    
     <main>
-        <section id="sobre">
-            <article>
-                <div>
-                    <p>O primeiro passo para o <span>futuro</span> com a</p>
-                    <h1><span>CodigoKid</span></h1>
-                    <h1><span>Alagoinhas</span></h1>
-                    <p>Com a CódigoKid <span>Alagoinhas</span> você investe em
-                        Robótica e Programação para que seu filho
-                        desenvolva as habilidades mais importantes pro
-                        futuro! Essenciais como criatividade, pensamento
-                        lógico e resolução de problemas, competências que
-                        farão toda a diferença no mundo de amanhã!
-                    </p>
-                    <a href="https://api.whatsapp.com/send/?phone=557530330707&text=Ol%C3%A1%21+Gostaria+de+me+inscrever+para+aula+experimental.+%EF%BF%BD&type=phone_number&app_absent=0"><button>INSCREVA-SE</button></a>               
-                </div>
-                <div>
-                    <img src="src/img/robozinho.png" alt="robozinho" class="caixa_imagens">
-                </div> 
-            </article>                       
-        </section>
+        <div id="caixa_topo">
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a>Cursos</a>
+                            <ul>
+                                <li><a href="#robotica">Robótica</a></li>
+                                <li><a href="#games">Dev. Games</a></li>
+                                <li><a href="#programacao">Programação</a></li>
+                                <li><a href="#cursos">Outros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>            
+                </nav>
+            </header>        
+            <section id="sobre">
+                <article>
+                    <div>
+                        <p>O primeiro passo para o <span>futuro</span> com a</p>
+                        <h1><span>CodigoKid</span></h1>
+                        <h1><span>Alagoinhas</span></h1>
+                        <p>Com a CódigoKid <span>Alagoinhas</span> você investe em
+                            Robótica e Programação para que seu filho
+                            desenvolva as habilidades mais importantes pro
+                            futuro! Essenciais como criatividade, pensamento
+                            lógico e resolução de problemas, competências que
+                            farão toda a diferença no mundo de amanhã!
+                        </p>
+                        <a href="https://api.whatsapp.com/send/?phone=557530330707&text=Ol%C3%A1%21+Gostaria+de+me+inscrever+para+aula+experimental.+%EF%BF%BD&type=phone_number&app_absent=0"><button>INSCREVA-SE</button></a>               
+                    </div>
+                    <div>
+                        <img src="src/img/robozinho.png" alt="robozinho" class="caixa_imagens">
+                    </div> 
+                </article>                       
+            </section>
+        </div>        
         <section class="lilas" id="robotica">
             <article>
                 <div>
@@ -143,7 +146,91 @@
         </section>
         <section id="cursos">
             <article>
-                <img src="src/img/cursos.png" alt="cursos">
+                <!--<img src="src/img/cursos.png" alt="cursos">-->
+                <div class="caixa_outros_cursos">
+                    <div>
+                        <div class="barras_curso">
+                            <div class="barrinha azul"></div>
+                            <h2 id="azul">DESENVOLVEDOR DE JOGOS</h2>
+                        </div>
+                        <div class="caixa_info azul">
+                            <p>DURAÇÃO: 12 MESES</p>
+                            <p>IDADE INDICADA: +07 ANOS</p>
+                        </div>
+                        <div class="barras_curso">
+                            <div class="barra azul"></div>
+                            <p>Aprender a desenvolver jogos vai além do entreterimento: é a chave para explorar carreiras na tecnologia e na inovação. Ao criar jogos, você desenvolve havilidades essenciais como programação, design gráfico e pensamento lógico preparando-se para o futuro da tecnologia.</p>
+                        </div>
+                    </div>                
+                    <div class="caixa_imagem_cursos">
+                        <img src="src/img/controle_sem_fundo.png" alt="controle_sem_fundo">
+                    </div>
+                </div>
+                <div class="caixa_outros_cursos">
+                    <div>
+                        <div class="barras_curso">
+                            <div class="barrinha azul_claro"></div>
+                            <h2 id="azul_claro">INFORMÁTICA ESSENCIAL</h2>
+                        </div>
+                        <div class="caixa_info azul_claro">
+                            <p>DURAÇÃO: 12 MESES</p>
+                            <p>IDADE INDICADA: +07 ANOS</p>
+                        </div>
+                        <div class="barras_curso">
+                            <div class="barra azul_claro"></div>
+                            <p>O contanto com infomática desde cedo ajuda as crianças a usar a tecnologia de maneira segura e inteligente. Ao aprender informática, as crianças descobrem novas formas de estudar e resolver desafios de forma criativa. Informática é a porta de entrada para as profissões e desafios do futuro!</p>
+                        </div>
+                    </div>                
+                    <div class="caixa_imagem_cursos">
+                        <img src="src/img/computador_sem_fundo.png" alt="computador_sem_fundo">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <!--<img src="src/img/cursos.png" alt="cursos">-->
+                <div class="caixa_outros_cursos">
+                    <div>
+                        <div class="barras_curso">
+                            <div class="barrinha laranja"></div>
+                            <h2 id="laranja">DESENVOLVIMENTO WEB</h2>
+                        </div>
+                        <div class="caixa_info laranja">
+                            <p>DURAÇÃO: 12 MESES</p>
+                            <p>IDADE INDICADA: +07 ANOS</p>
+                        </div>
+                        <div class="barras_curso">
+                            <div class="barra laranja"></div>
+                            <p>A programação é uma das habilidades mais importantes do século 21 -  e seu filho pode começar a dominá-la agora! Programar ensina as crianças a pensar de forma lógica analítica e a resolver problemas complexos. Aprender a programar é uma aventura divertida e desafiadora que transforma o aprendizado em uma experiência prática.</p>
+                        </div>
+                    </div>                
+                    <div class="caixa_imagem_cursos">
+                        <img src="src/img/celular_sem_fundo.png" alt="celular_sem_fundo">
+                    </div>
+                </div>
+                <div class="caixa_outros_cursos">
+                    <div>
+                        <div class="barras_curso">
+                            <div class="barrinha vermelho"></div>
+                            <h2 id="vermelho">OUTROS CURSOS</h2>
+                        </div>                        
+                        <div id="outros_cursos">
+                            <div>
+                                <p>/ / / MATEMÁTICA DO 06º ATÉ O 09º ANO</p>
+                                <p>/ / / POWER-BI</p>
+                                <p>/ / / ANALISTA DE GESTÃO E FINANÇAS</p>
+                                <p>/ / / DESENVOLVIMENTO PROFISSIONAL</p>
+                                <p>/ / / ANALISTA DE DESIGN DIGITAL</p>
+                            </div>
+                            <div>
+                                <p>/ / / MANUTENÇÃO DE CELULARES</p>
+                                <p>/ / / MANUTENÇÃO DE COMPUTADORES</p>
+                                <p>/ / / PACOTE JOVEM APRENDIZ</p>
+                                <p>/ / / ATENDENTE DE FARMÁCIA</p>
+                                <p>/ / / ANALISTA DE TECNOLOGIA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
         <section id="depoimentos">

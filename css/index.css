@@ -16,8 +16,14 @@ body{
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    background-color: #fff;
     color: var(--preto);
     font-family: "Poppins", serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 section{
     display: flex;
@@ -29,8 +35,9 @@ article{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     padding: 30px;
     gap: 30px;
 }
@@ -39,19 +46,17 @@ button{
     cursor: pointer;
 }
 
-h2 h4{
-    
+article{
+    display: flex;
+    flex-direction: row;
 }
 
-/* TOPO */
+/* MAIN */
 
 header{ 
     display: flex;
     justify-content: space-around;   
     width: 100%;
-    background: url(../src/img/fundo_topograhy.png);
-    background-size: cover;
-    background-position: top;
 }
 nav{
     padding: 15px;
@@ -107,8 +112,6 @@ nav{
     height: 400px;
 }
 
-/* MAIN */
-
 .lilas{
     background-color: var(--lilas);
 }
@@ -151,9 +154,13 @@ nav{
     
 }
 
-#sobre{
+#caixa_topo{
     background: url(../src/img/fundo_topograhy.png);
     background-size: cover;
+}
+#sobre{
+    display: flex;
+    flex-direction: row;
 }
 #sobre h1{
     font-size: 3rem;
@@ -162,7 +169,6 @@ nav{
     font-weight: bold;
     margin-bottom: 10px;
 }
-#sobre img{}
 #sobre button{
     font-size: 2rem;
     padding: 20px;
@@ -174,6 +180,8 @@ nav{
 }
 
 #robotica{
+    display: flex;
+    flex-direction: row;
     color: #fff;
 }
 #robotica h1{
@@ -190,7 +198,10 @@ nav{
     background-color: lightgray;    
 }
 
-#games{}
+#games{
+    display: flex;
+    flex-direction: row;
+}
 #games h1{
     font-size: 3rem;
 }
@@ -207,6 +218,8 @@ nav{
 }
 
 #programacao{
+    display: flex;
+    flex-direction: row;
     color: #fff;
 }
 #programacao h1{
@@ -224,16 +237,90 @@ nav{
     color: var(--verde);
 }
 
-#cursos{
+/* CURSOS */
+.azul{
+    background-color: blue;
+    margin-bottom: 20px;
+}
+#azul{
+    color: blue;
+}
+.azul_claro{
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+#azul_claro{
+    color: aqua;
+}
+.laranja{
+    background-color: orange;
+    margin-bottom: 20px;
+}
+#laranja{
+    color: orange;
+}
+.vermelho{
+    background-color: red;
+    margin-bottom: 20px;
+}
+#vermelho{
+    color: red;
+}
+.caixa_info{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+    border-radius: 20px;
     padding: 10px;
 }
-#cursos img{
+
+/* CURSOS */
+
+#cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cursos h2{
+    margin-bottom: 20px;
+}
+#cursos p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+#curso img{
     width: 100%;
 }
+.caixa_outros_cursos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.caixa_outros_cursos img{
+    width: 157px;
+    height: 178px;
+}
+.barras_curso{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.barrinha{
+    width: 10px;
+    height: 50px;
+}
+.barra{
+    width: 220px;
+    height: 150px;
+}
+
+/* DEPOIMENTOS */
 
 #depoimentos{
     display: flex;
+    flex-direction: row;
     padding: 10px;
 }
 #depoimentos div{
@@ -281,7 +368,12 @@ nav{
     margin-bottom: 10px;
 }
 
+/* CONTATO */
+
 #contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     color: #fff;
 }
@@ -346,4 +438,50 @@ footer a{
 }
 footer a:hover{
     color: var(--lilas);
+}
+
+@media (max-width: 450px) {
+    article{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre img{
+        display: none;
+    }
+
+    #games article{
+        flex-direction: column-reverse;
+    }
+
+    #cursos{}
+
+    #contato #foto_contato{
+        display: none;
+    }
+
+    #depoimentos{
+        padding: 0px;
+        background-color: var(--preto);
+    }
+    #depoimento div{        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .caixa_depoimentos{
+        flex-direction: column;
+    }
+    #caixa{
+        background-color: transparent;
+    }
+
+    #depoimentos div{
+        border-radius: 0px;
+    }
+
+    #caixa_social{
+        flex-direction: column;
+    }
 }
