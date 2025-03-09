@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --lilas: #5d17eb;
+    --verde: #12ff6a;
+    --preto: #1b1b1b;
+}
+
+span{
+    color: var(--lilas);
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: var(--preto);
+    font-family: "Poppins", serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    gap: 30px;
+}
+
+button{
+    cursor: pointer;
+}
+
+h2 h4{
+    
+}
+
+/* TOPO */
+
+header{ 
+    display: flex;
+    justify-content: space-around;   
+    width: 100%;
+    background: url(../src/img/fundo_topograhy.png);
+    background-size: cover;
+    background-position: top;
+}
+nav{
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #5e17eb69;
+    border-radius: 10px;
+}
+.menu{
+    list-style:none;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float:left;
+}
+.menu li{
+    position:relative;
+    float:left;
+}
+.menu li a{
+    color:var(--lilas);
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+}
+.menu li a:hover{
+    background:var(--lilas);
+    color:#fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+.menu li  ul{
+    position:absolute;
+    top:35px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+.menu li ul li{
+    border-bottom:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+}
+
+.caixa_imagens{
+    width: 350px;
+    height: 400px;
+}
+
+/* MAIN */
+
+.lilas{
+    background-color: var(--lilas);
+}
+.verde{
+    background-color: var(--verde);
+}
+.preto{
+    background-color: var(--preto);
+}
+.reverso{
+    flex-direction: row-reverse;
+}
+.caixa_foto_botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caixa_foto_botao img{
+    margin-bottom: 20px;
+}
+.caixa_foto_botao button{
+    padding: 20px;
+    text-decoration: underline;
+    border: 0;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.icones_cursos{
+    max-width: 40px;
+    border: 0;
+}
+.cronograma{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+
+#sobre{
+    background: url(../src/img/fundo_topograhy.png);
+    background-size: cover;
+}
+#sobre h1{
+    font-size: 3rem;
+}
+#sobre p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#sobre img{}
+#sobre button{
+    font-size: 2rem;
+    padding: 20px;
+    background-color: var(--lilas);
+    color: #fff;
+    text-decoration: underline;
+    border: 0;
+    border-radius: 20px;
+}
+
+#robotica{
+    color: #fff;
+}
+#robotica h1{
+    font-size: 3rem;
+}
+#robotica h2{
+    margin-bottom: 20px;
+}
+#robotica #foto_robotica{
+    border: 5px solid lightgray;
+    border-radius: 20px;
+}
+#robotica button{
+    background-color: lightgray;    
+}
+
+#games{}
+#games h1{
+    font-size: 3rem;
+}
+#games h2{
+    margin-bottom: 20px;
+}
+#games #foto_games{
+    border: 5px solid var(--preto);
+    border-radius: 20px;
+}
+#games button{
+    background-color: var(--preto);
+    color: #fff;
+}
+
+#programacao{
+    color: #fff;
+}
+#programacao h1{
+    font-size: 3rem;
+}
+#programacao h2{
+    margin-bottom: 20px;
+}
+#programacao #foto_programacao{
+    border: 5px solid var(--verde);
+    border-radius: 20px;
+}
+#programacao button{
+    background-color: var(--preto);
+    color: var(--verde);
+}
+
+#cursos{
+    display: flex;
+    padding: 10px;
+}
+#cursos img{
+    width: 100%;
+}
+
+#depoimentos{
+    display: flex;
+    padding: 10px;
+}
+#depoimentos div{
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+}
+#depoimentos h2{
+    color: #fff;
+}
+#depoimentos h4{
+    color: var(--verde);
+}
+#depoimentos p{
+    color: #fff;
+    text-align: left;
+}
+#depoimentos img{
+    width: 100%;
+}
+#caixa{
+    background-color: var(--preto);
+}
+.caixa_depoimentos{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.caixa_perfil{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.foto_perfil{
+    border-radius: 20px;
+    max-width: 110px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.estrelas{
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+#contato{
+    width: 100%;
+    color: #fff;
+}
+#foto_contato{
+    width: 300px;
+    height: 370px;
+    border: 5px solid var(--verde);
+}
+#contato nav{
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+    border: 0;
+}
+#contato a{
+    display: flex;
+    flex-direction: row; 
+    width: 30px;
+    height: 30px;       
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;    
+}
+#contato h2{
+    color: var(--verde);
+}
+#contato h3{
+    color: var(--verde);
+}
+#contato p{
+    margin-bottom: 30px;
+}
+#caixa_social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+#logo{
+    max-width: 250px;
+    height: 50px;
+}
+#foto_contato{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--preto);
+    color: #fff;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;    
+}
+footer a:hover{
+    color: var(--lilas);
+}
