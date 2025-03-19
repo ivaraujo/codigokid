@@ -433,6 +433,27 @@ nav{
     border-bottom-right-radius: 50px;
 }
 
+#link-topo{
+    
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff81;
+    background-color: #5e17eb81;
+    border: 2px solid #ffffff81;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+#link-topo:hover{
+    color: #fff;
+    background-color: var(--lilas);
+    border: 2px solid #fff;
+}
+
 /* FOOTER */
 
 footer{
@@ -450,4 +471,3 @@ footer a{
 footer a:hover{
     color: var(--lilas);
 }
-
