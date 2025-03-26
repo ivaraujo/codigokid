@@ -1,5 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*/
+
 :root{
     --lilas: #5d17eb;
     --verde: #12ff6a;
@@ -57,10 +56,6 @@ button{
     cursor: pointer;
 }
 
-article{
-    display: flex;
-    flex-direction: row;
-}
 
 /* MAIN */
 
@@ -401,12 +396,14 @@ nav{
 }
 #contato a{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;        
+}
+.btn-social{
     width: 30px;
     height: 30px;       
     background-color: #fff;
     padding: 8px;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 #contato h2{
     color: var(--verde);
@@ -433,17 +430,16 @@ nav{
     border-bottom-right-radius: 50px;
 }
 
-#link-topo{
-    
+#link-topo{    
     text-decoration: none;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #ffffff81;
     background-color: #5e17eb81;
     border: 2px solid #ffffff81;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 50%;
+    padding: 15px;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -452,6 +448,23 @@ nav{
     color: #fff;
     background-color: var(--lilas);
     border: 2px solid #fff;
+}
+
+#btn-contato{
+    background-color: transparent;
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: bold;
+    width: 250px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+    justify-content: center;
+}
+#btn-contato:hover{
+    background-color: var(--verde);
+    color: var(--lilas);
 }
 
 /* FOOTER */
